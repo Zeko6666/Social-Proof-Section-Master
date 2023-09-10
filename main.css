@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.image-top{
+    width: 100%;
+    height: 400px;
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container , .container-card{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    margin: 50px auto 60px;
+}
+.container-card{
+    margin: auto;
+}
+.block-one h1{
+    width: 250px;
+    color: #511f50;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.block-one p{
+    width: 390px;
+    color: #777;    
+}
+
+.block-two .card{
+    background-color: #f7f2f8;
+    margin-bottom: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.block-two .card:first-child{
+    margin-left: -50px;
+}
+
+.block-two .card:last-child{
+    margin-left: 50px;
+}
+.block-two .card .stars-content span{
+    background-image: url('images/icon-star.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.text-content span{
+    font-weight: bold;
+}
+
+.block-content{
+    display: flex;
+    gap: 10px;
+    height: 260px;
+    margin: auto;
+}
+.block-three{
+    background-color: #511f50;
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 300px;
+}
+
+.block-three:first-child{
+    align-self: flex-start;
+}
+
+.block-three:nth-child(2){
+    align-self: center;
+}
+
+.block-three:last-child{
+    align-self: flex-end;
+}
+.block-three .block-header{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-content{
+    width: 40px;
+    height: 40px;
+}
+
+.image-content img{
+    max-width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+h3{
+    font-size: 18px;
+    color: #fff;
+}
+
+h3 span{
+    font-size: 16px;
+    color: #973f79;
+    font-weight: normal;
+}
+
+.block-header + p{
+    width: 245px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+
+.image-bottom{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+}
+
+
+@media (max-width:991px) {
+    .container{
+        flex-direction: column;
+        justify-content: center ; 
+        margin: 50px auto 40px;
+    }
+    .block-one{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .block-one h1{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+    }
+    .block-two .card:first-child , 
+    .block-two .card:last-child{
+        margin-left: 0;
+    }
+
+    .block-two .card{
+        flex-direction: column;
+    }
+
+    .card .stars-content{
+        margin-bottom: 10px;
+    }
+    
+    .container-card{
+        flex-direction: column;
+    }
+    .block-content{
+        flex-direction: column;
+    }
+    .image-top{
+        width: 100%;
+        height: 300px;
+        background-image: url(images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .image-bottom{
+        width: 100%;
+        height: 400px;
+        background-image: url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+    }
+}
